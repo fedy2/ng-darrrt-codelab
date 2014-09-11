@@ -67,7 +67,7 @@ the information they need to download the
 name: s1_basics
 description: A one hour exercise, based on the Darrrt project, to learn AngularDart.
 dependencies:
-  angular: 0.9.8
+  angular: 0.14.0
   browser: any
   js: any
   shadow_dom: any

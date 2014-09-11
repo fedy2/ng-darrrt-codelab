@@ -29,7 +29,7 @@ import 'package:angular/angular.dart';
 import 'dart:async';
 import 'dart:math';
 
-@NgInjectableService()
+@Injectable()
 class NamesService {
   static Random rand = new Random();
   final Http _http;
@@ -64,7 +64,7 @@ class NamesService {
 
 Key information:
 * This file creates a `NamesService` class.
-* The `@NgInjectableService` annotation on NamesService
+* The `@Injectable` annotation on NamesService
   indicates that the NamesService class will be instantiated by Angular's dependency injector.
 * Much of the logic that was in the controller is now in the NamesService class, specifically:
   * The `names` and `appellations` lists
@@ -105,7 +105,7 @@ Your controller should now look like this:
 <!-- PENDING: split up, explain better -->
 
 ```Dart
-@NgController(
+@Controller(
     selector: '[badge-controller]',
     publishAs: 'ctrl')
 class BadgeController {
@@ -213,6 +213,6 @@ Your files should contain the string `s1_basics`
 wherever the files in s7_service contain `s7_service`.
 
 
-## [Home](../README.md#code-lab-angulardart) | [< Previous](step-6.md#step-6-read-from-a-json-encoded-file) | [Next >](step-8.md#step-8-use-a-filter-to-modify-data)
+## [Home](../README.md#code-lab-angulardart) | [< Previous](step-6.md#step-6-read-from-a-json-encoded-file) | [Next >](step-8.md#step-8-use-a-formatter-to-modify-data)
 
 

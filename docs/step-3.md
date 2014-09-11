@@ -62,16 +62,16 @@ If you're using Dart Editor, it warns you that the import is unused.
 }</b>
 </pre>
 
-&rarr; Add an `NgController` annotation to the class.
+&rarr; Add an `Controller` annotation to the class.
 
-<pre><b>@NgController(
+<pre><b>@Controller(
   selector: '[badge-controller]',
   publishAs: 'ctrl')</b>
 class BadgeController {   
 </pre>
 
 Key information:
-- The NgController annotation tells Angular that BadgeController is an Angular controller.
+- The Controller annotation tells Angular that BadgeController is an Angular controller.
 - The required `selector` argument defines the CSS selector that triggers the controller.
   It can be any valid CSS selector that does not cross element boundaries.
 - The `publishAs` argument specifies that the controller instance should be assigned to
@@ -129,7 +129,7 @@ import 'package:s1_basics/badge_controller.dart'; </b>
 ...
 <b>class PirateModule extends Module {
   PirateModule() {
-    type(BadgeController);
+    bind(BadgeController);
   }
 }</b>
 </pre>
@@ -137,7 +137,7 @@ import 'package:s1_basics/badge_controller.dart'; </b>
 Key information:
 - The [Module](https://docs.angulardart.org/#angular/angular.Module) class
   provides all of Angular’s built-in services and directives.
-- The code `type(BadgeController)` adds BadgeController
+- The code `bind(BadgeController)` adds BadgeController
   to the list of modules that Angular loads.
 
 
@@ -152,7 +152,9 @@ so that it uses a PirateModule object.
 <b>import 'package:s1_basics/pirate_module.dart';</b>
 
 void main() {
-  <b>ngBootstrap(module: new PirateModule());</b>
+  <b>  applicationFactory()
+      .addModule(new PirateModule())
+      .run();</b>
 }
 </pre>
     

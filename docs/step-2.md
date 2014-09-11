@@ -18,6 +18,7 @@ Edit `web/main.dart`, as follows.
 
 <pre>
 <b>import 'package:angular/angular.dart';
+import 'package:angular/application_factory.dart';
 
 @MirrorsUsed(override: '*')
 import 'dart:mirrors';</b>
@@ -32,15 +33,17 @@ Key information:
 * The first import pulls in the library
   defined in `angular.dart` within the `angular` package.
   This library contains the most commonly used AngularDart APIs.
+* The second import pulls in the library
+  defined in `application_factory.dart` within the `angular.app.factory` package.
 * Importing `dart:mirrors` and annotating it with `@MirrorsUsed` is a temporary
   measure that can help the dart2js compiler to generate smaller code.
 
 
-&rarr; Add `ngBootstrap();` to the `main`() method:
+&rarr; Add `applicationFactory().run();` to the `main`() method:
 
 <pre>
 void main() {
-<b>  ngBootstrap();</b>
+<b>  applicationFactory().run();</b>
 }
 </pre>
 

@@ -74,7 +74,7 @@ library s1_basics.components.badge_component;
 
 import 'package:angular/angular.dart';
 
-@NgComponent(
+@Component(
     selector: 'badge',
     templateUrl: 'packages/s1_basics/components/badge_component.html',
     cssUrl: 'packages/s1_basics/components/badge_component.css',
@@ -88,7 +88,7 @@ class BadgeComponent {
 
 Key information:
 
-* The NgComponent annotation tells Angular that BadgeComponent
+* The Component annotation tells Angular that BadgeComponent
   is an Angular component.
 * The required `selector` argument defines the CSS selector
   that specifies the component.
@@ -133,8 +133,8 @@ Key information:
   <pre>
   class PirateModule extends Module {
     PirateModule() {
-      type(BadgeController);
-      <b>type(BadgeComponent);</b>
+      bind(BadgeController);
+      <b>bind(BadgeComponent);</b>
     }
   }
   </pre>

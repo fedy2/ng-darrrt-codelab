@@ -79,7 +79,7 @@ class BadgeController {
 Key information:
 
 * The `Http` service facilitates communication with remote HTTP servers.
-* You don't need to do anything to `ngBootstrap()` to use the `Http` service
+* You don't need to do anything to `applicationFactory().addModule(new PirateModule()).run();` to use the `Http` service
   because an instance of it is automatically injected by Angular.
 
 &rarr; Add a private `_loadData()` method to `BadgeController`:

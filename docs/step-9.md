@@ -13,7 +13,7 @@ you need to compile your app to JavaScript.
 
 &rarr; In Dart Editor, right-click the HTML file and choose **Run as JavaScript**.
 
-For example, go to **samples/s8_filter/web/index.html**,
+For example, go to **samples/s8_formatter/web/index.html**,
 right-click it, and choose **Run as JavaScript**.
 
 ![screenshot of Dart Editor](img/s9-runAsJs.png)
@@ -42,4 +42,4 @@ such as Safari or Firefox.
 Try the [AngularDart Tutorial](https://angulardart.org/tutorial/).
 
 
-## [Home](../README.md) | [< Previous](step-8.md#step-8-use-a-filter-to-modify-data)
+## [Home](../README.md) | [< Previous](step-8.md#step-8-use-a-formatter-to-modify-data)
