@@ -1,4 +1,4 @@
-name: s8_filter
+name: s8_formatter
 description: A one hour exercise, based on the Darrrt project, to learn AngularDart.
 dependencies:
   angular: 0.14.0

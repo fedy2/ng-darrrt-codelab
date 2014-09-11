@@ -2,25 +2,25 @@
 // for details. All rights reserved. Use of this source code is governed by a
 // BSD-style license that can be found in the LICENSE file.
 
-library s8_filter.test;
+library s8_formatter.test;
 
 import 'package:unittest/unittest.dart';
 
-import 'packages/s8_filter/filters/capitalize_filter.dart';
+import 'packages/s8_formatter/formatters/capitalize_formatter.dart';
 
 void main () {
-  group('CapitalizeFilter', () {
-    var filter = new CapitalizeFilter();
+  group('CapitalizeFormatter', () {
+    var formatter = new CapitalizeFormatter();
     test('with null name', () {
-      expect(filter(null), isEmpty);
+      expect(formatter(null), isEmpty);
     });
 
     test('with empty name', () {
-      expect(filter(''), isEmpty);
+      expect(formatter(''), isEmpty);
     });
 
     test('with un-capitalized name', () {
-      expect(filter('misko'), 'Misko');
+      expect(formatter('misko'), 'Misko');
     });
   });
 }

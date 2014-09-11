@@ -2,14 +2,14 @@
 // for details. All rights reserved. Use of this source code is governed by a
 // BSD-style license that can be found in the LICENSE file.
 
-library s8_filter.badge_controller;
+library s8_formatter.badge_controller;
 
 import 'package:angular/angular.dart';
 
 import 'dart:async' show Future;
 
-import 'package:s8_filter/services/names_service.dart';
-import 'package:s8_filter/model.dart' show PirateName;
+import 'package:s8_formatter/services/names_service.dart';
+import 'package:s8_formatter/model.dart' show PirateName;
 
 @Controller(
     selector: '[badge-controller]',

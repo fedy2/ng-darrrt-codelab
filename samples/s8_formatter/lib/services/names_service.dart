@@ -2,7 +2,7 @@
 // for details. All rights reserved. Use of this source code is governed by a
 // BSD-style license that can be found in the LICENSE file.
 
-library s8_filter.services.names_service;
+library s8_formatter.services.names_service;
 
 import 'package:angular/angular.dart';
 import 'dart:async';
@@ -19,7 +19,7 @@ class NamesService {
 
   Future _loadData() {
     if (names != null) return new Future.value(true);
-    return _http.get('packages/s8_filter/assets/piratenames.json')
+    return _http.get('packages/s8_formatter/assets/piratenames.json')
       .then((HttpResponse response) {
         names = response.data['names'];
         appellations = response.data['appellations'];
