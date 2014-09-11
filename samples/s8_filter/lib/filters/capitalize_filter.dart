@@ -6,7 +6,7 @@ library s8_filter.filter.capitalize_filter;
 
 import 'package:angular/angular.dart';
 
-@NgFilter(name: 'capitalize')
+@Formatter(name: 'capitalize')
 class CapitalizeFilter {
   call(String name) {
     if (name == null || name.isEmpty) return '';

@@ -10,7 +10,7 @@ import 'package:s5_model/components/badge_component.dart';
 
 class PirateModule extends Module {
   PirateModule() {
-    type(BadgeController);
-    type(BadgeComponent);
+    bind(BadgeController);
+    bind(BadgeComponent);
   }
 }

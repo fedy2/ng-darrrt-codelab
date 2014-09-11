@@ -6,7 +6,7 @@ library s4_component.components.badge_component;
 
 import 'package:angular/angular.dart';
 
-@NgComponent(
+@Component(
     selector: 'badge',
     templateUrl: 'packages/s4_component/components/badge_component.html',
     cssUrl: 'packages/s4_component/components/badge_component.css',

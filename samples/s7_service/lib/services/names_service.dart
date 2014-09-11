@@ -8,7 +8,7 @@ import 'package:angular/angular.dart';
 import 'dart:async';
 import 'dart:math';
 
-@NgInjectableService()
+@Injectable()
 class NamesService {
   static final Random rand = new Random();
   final Http _http;

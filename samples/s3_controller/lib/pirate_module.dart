@@ -9,6 +9,6 @@ import 'package:s3_controller/badge_controller.dart';
 
 class PirateModule extends Module {
   PirateModule() {
-    type(BadgeController);
+    bind(BadgeController);
   }
 }

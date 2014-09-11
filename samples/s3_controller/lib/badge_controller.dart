@@ -6,7 +6,7 @@ library s3_controller.badge_controller;
 
 import 'package:angular/angular.dart';
 
-@NgController(
+@Controller(
     selector: '[badge-controller]',
     publishAs: 'ctrl')
 class BadgeController {

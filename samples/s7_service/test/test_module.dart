@@ -14,9 +14,9 @@ import 'test_names_service.dart';
 
 class TestPirateModule extends Module {
   TestPirateModule() {
-    type(BadgeController);
+    bind(BadgeController);
     // Use TestNamesService that provides the data for the service.
-    type(NamesService, implementedBy: TestNamesService);
-    type(BadgeComponent);
+    bind(NamesService, implementedBy: TestNamesService);
+    bind(BadgeComponent);
   }
 }

@@ -12,9 +12,9 @@ import 'package:s8_filter/filters/capitalize_filter.dart';
 
 class PirateModule extends Module {
   PirateModule() {
-    type(BadgeController);
-    type(BadgeComponent);
-    type(NamesService);
-    type(CapitalizeFilter);
+    bind(BadgeController);
+    bind(BadgeComponent);
+    bind(NamesService);
+    bind(CapitalizeFilter);
   }
 }

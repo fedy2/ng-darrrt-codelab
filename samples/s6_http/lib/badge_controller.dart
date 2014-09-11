@@ -11,7 +11,7 @@ import 'dart:async' show Future;
 
 import 'package:s6_http/model.dart' show PirateName;
 
-@NgController(
+@Controller(
     selector: '[badge-controller]',
     publishAs: 'ctrl')
 class BadgeController {

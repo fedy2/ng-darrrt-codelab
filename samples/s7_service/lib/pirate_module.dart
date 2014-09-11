@@ -11,8 +11,8 @@ import 'package:s7_service/services/names_service.dart';
 
 class PirateModule extends Module {
   PirateModule() {
-    type(BadgeController);
-    type(BadgeComponent);
-    type(NamesService);
+    bind(BadgeController);
+    bind(BadgeComponent);
+    bind(NamesService);
   }
 }

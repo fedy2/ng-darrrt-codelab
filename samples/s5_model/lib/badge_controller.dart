@@ -10,7 +10,7 @@ import 'dart:math' show Random;
 
 import 'package:s5_model/model.dart';
 
-@NgController(
+@Controller(
     selector: '[badge-controller]',
     publishAs: 'ctrl')
 class BadgeController {

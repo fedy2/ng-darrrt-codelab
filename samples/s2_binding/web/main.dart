@@ -5,10 +5,11 @@
 library s2_binding.main;
 
 import 'package:angular/angular.dart';
+import 'package:angular/application_factory.dart';
 
 @MirrorsUsed(override: '*')
 import 'dart:mirrors';
 
 void main() {
-  ngBootstrap();
+  applicationFactory().run();
 }
